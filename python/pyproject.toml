@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling>=1.21"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gr8mail"
+version = "0.1.0"
+description = "Official Python SDK for Gr8Mail: send email from your own domain by API."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "thegr8labs" }]
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["email", "transactional-email", "smtp", "gr8mail", "send-email"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Communications :: Email",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://mail.thegr8labs.com"
+Documentation = "https://mail.thegr8labs.com/docs"
+Repository = "https://github.com/thegr8labs/gr8mail-SDK"
+Issues = "https://github.com/thegr8labs/gr8mail-SDK/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gr8mail"]
